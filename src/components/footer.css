@@ -1,13 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200&family=Rye&display=swap');
 
 .footer {
   background-color: #1A1A1A;
   color: 	#F5F3E7;
-  font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-
 }
 
 .footer-top {
@@ -104,9 +98,7 @@
   border-top:  solid 1px #444;
 }
 
-.footer-bottom p{
-  
-}
+
 
 .footer-social {
   display:inline;

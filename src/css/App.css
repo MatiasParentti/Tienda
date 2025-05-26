@@ -1,7 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200&family=Rye&display=swap');
 
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+:root {
+  --negro-profundo: #1A1A1A;
+  --dorado-metalico: #C9A74A;
+  --blanco-hueso: #F5F3E7;
+  --marron-oscuro: #4A3F35;
+  --ambar-suave: #D6A76C;
 }

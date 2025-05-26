@@ -1,0 +1,168 @@
+
+.contacto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  padding: 4vh 0;
+  gap: 2rem;
+}
+
+.formulario {
+  flex: 1 1 35%;
+   
+}
+
+.formulario h2,
+.redes h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: #4A3F35;
+}
+
+.formulario p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #555 ;
+}
+
+.line-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.line {
+  display: block;
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+  margin-left: 1rem;
+}
+
+
+form label {
+  display: block;
+  margin-top: 1.5rem;
+  font-weight: 500;
+  color: #464646;
+  
+}
+
+form input,
+form textarea {
+ 
+  box-sizing: border-box;
+   padding: 0 15px;
+  width: 100%;
+  height: 42px;
+  border: 1px solid rgba(129, 129, 129, 0.3);
+  background-color: transparent;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+
+}
+
+textarea {
+  padding: 10px 15px;
+  min-height: 190px;
+  resize: vertical;
+}
+
+
+form button {
+  margin-top: 1.5rem;
+  padding: 10px 25px;
+  background-color: #C9A74A;
+  color: #F5F3E7;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+form button:hover {
+  background-color: #D6A76C;
+}
+
+.redes {
+  flex: 1 1 35%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.iconos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.iconos a {
+  font-size: 2rem;
+  color: #1A1A1A;
+  transition: color 0.3s ease;
+}
+
+.iconos a:hover {
+  color: #4A3F35;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+
+form > label {
+  font-size: 0.95rem;
+}
+
+
+@media (max-width: 1080px) {
+  .contacto {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .formulario,
+  .redes {
+    width: 100%;
+  }
+
+ 
+}
+
+
+@media (max-width: 480px) {
+  form input,
+  form textarea {
+    font-size: 1rem;
+  }
+
+  .iconos a {
+    font-size: 1.8rem;
+  }
+}
+
+
+@media (max-width: 375px) {
+  form button {
+    width: 100%;
+  }
+
+  .formulario h2,
+  .redes h2 {
+    font-size: 1.4rem;
+  }
+}
