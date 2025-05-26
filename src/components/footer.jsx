@@ -1,34 +1,32 @@
 import "./footer.css";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-top">
-
         <div className="footer-logo">
           <h2>
             <span className="bold">TIENDA</span>
-            
-            <div>DE CERVEZAS</div> 
+
+            <div>DE CERVEZAS</div>
           </h2>
         </div>
-<div>
-  
-</div>
+        <div></div>
         <div className="footer-section">
           <h3>CONTENIDOS</h3>
           <ul>
             <li>
-              <a href="/">Inicio</a>
+              <Link to="/">Inicio</Link>
             </li>
             <li>
-              <a href="/tienda">Nuestras Cervezas</a>
+              <Link to="/tienda">Nuestras Cervezas</Link>
             </li>
             <li>
-              <a href="#">Locales</a>
+              <Link to="/#">Locales</Link>
             </li>
             <li>
-              <a href="/menu-tienda">Nuestro menú</a>
+              <Link to="/menu-tienda">Nuestro menú</Link>
             </li>
           </ul>
         </div>
@@ -37,16 +35,16 @@ export default function Footer() {
           <h3>NECESITÁS AYUDA</h3>
           <ul>
             <li>
-              <a href="/tutoriales">Tutoriales</a>
+              <Link to="/tutoriales">Tutoriales</Link>
             </li>
             <li>
-              <a href="/trabaja-en-tdc">Trabajá en TDC</a>
+              <Link to="/trabaja-en-tdc">Trabajá en TDC</Link>
             </li>
             <li>
-              <a href="/franquicias">Franquicias</a>
+              <Link to="/franquicias">Franquicias</Link>
             </li>
             <li>
-              <a href="/contacto">Contacto</a>
+              <Link to="/contacto">Contacto</Link>
             </li>
           </ul>
         </div>
@@ -58,10 +56,13 @@ export default function Footer() {
           <button>SUSCRIBIRME</button>
           <div className="footer-social">
             <h3>CONECTATE CON NOSOTROS</h3>
-           
-               <a href="#"><i className="fab fa-facebook-f"></i></a>
-          <a href="#"><i className="fab fa-instagram"></i></a>
-           
+
+            <a href="#">
+              <i className="fab fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i className="fab fa-instagram"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -71,7 +72,7 @@ export default function Footer() {
           © Copyright 2021 Tienda de cerveza - Todos los derechos reservados.
         </div>
         <div>
-Todos los logos, productos, marcas y nombres aquí utilizados son
+          Todos los logos, productos, marcas y nombres aquí utilizados son
           propiedad registrada.
         </div>
       </div>
