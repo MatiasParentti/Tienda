@@ -1,0 +1,35 @@
+.carousel-container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 90%;
+    align-items: center;
+    justify-content: center; /* Center images horizontally */
+}
+.arrow-left{
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.arrow-right{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.carousel{
+  display: flex;
+ 
+  position: relative;
+  align-items: center;
+  
+}
+.contenedor-carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  align-items: center;
+  flex-direction: column;
+}

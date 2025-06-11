@@ -7,6 +7,9 @@ import TrabajaEnTDC from "./pages/trabaja-en-tdc";
 import Franquicias from "./pages/franquicias";
 import Contacto from "./pages/contacto";
 import Footer from "./components/footer";
+import Header from "./components/header";
+import Body from "./components/body";
+
 
 import "./css/App.css";
 
@@ -15,8 +18,9 @@ function App() {
     <>
     
       <main style={{ minHeight: "90vh", padding: "4vh 5vw" }}>
-      
-          <Routes>
+      <Header></Header>
+      <Body></Body>
+        <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/tienda" element={<Tienda />} />
         <Route path="/tutoriales" element={<Tutoriales />} />
