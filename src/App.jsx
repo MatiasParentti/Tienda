@@ -17,20 +17,29 @@ function App() {
   return (
     <>
     
-      <main style={{ minHeight: "90vh", padding: "4vh 5vw" }}>
-      <Header></Header>
-      <Body></Body>
-        <Routes>
-        <Route path="/" element={<Index />} />
-        <Route path="/tienda" element={<Tienda />} />
-        <Route path="/tutoriales" element={<Tutoriales />} />
-        <Route path="/menu-tienda" element={<MenuTienda />} />
-        <Route path="/trabaja-en-tdc" element={<TrabajaEnTDC />} />
-        <Route path="/franquicias" element={<Franquicias />} />
-        <Route path="/contacto" element={<Contacto />} />
-      </Routes>
+      <main >
+        <div className="main-container">
+          <div className="header-container">
+            <Header></Header>
+          </div>
+          <div className="body-container">
+            <Body></Body>
+          </div>
+          <div className="footer-container">
+            <Footer></Footer>
+          </div>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/tienda" element={<Tienda />} />
+              <Route path="/tutoriales" element={<Tutoriales />} />
+              <Route path="/menu-tienda" element={<MenuTienda />} />
+              <Route path="/trabaja-en-tdc" element={<TrabajaEnTDC />} />
+              <Route path="/franquicias" element={<Franquicias />} />
+              <Route path="/contacto" element={<Contacto />} />
+            </Routes>
+        </div>
       </main>
-      <Footer></Footer>
+      
     </>
   );
 }
