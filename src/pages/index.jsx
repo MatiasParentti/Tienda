@@ -1,6 +1,5 @@
 
 import "../css/index.css";
-import Body from "../components/body";
 import Header from "../components/header";
 import Footer from "../components/footer";  
 import { useState } from "react";
@@ -26,7 +25,10 @@ const [current, setCurrent] = useState(0);
       </div>
       <div className="body">
       <div className="body-container">
-        <Body></Body>
+         <div className="body-background" >
+            <img src="/imgfondo.jpg" width="100%" height="100%" alt="background-image" />
+            
+        </div>
         <div
         className="contenedor-carousel"
         >

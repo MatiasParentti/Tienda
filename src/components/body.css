@@ -1,11 +1,1 @@
 
-.body-background {
-  display:flex;
-  flex-direction: column;
-  background-color: #F5F3E7;
-  color: #1A1A1A;
-  width: 100%;
-  z-index:0;
-  align-items: center;
-}
-

@@ -1,30 +1,39 @@
-.body-container {
+.body-background {
     display: flex;
     flex-direction: column;
+    background-color: #F5F3E7;
+    color: #1A1A1A;
+    width: 100%;
+    height: 100%;
     z-index: 0;
-    align-items: flex-start;
+    align-items: center;
     position: relative; /* Añadido */
 }
 
 .contenedor-carousel {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    z-index: 1;
-    margin-top: 0; /* Opcional: elimina el margen superior */
+    position: absolute; /* Cambiado a absolute */
+    top: 80px; /* Ajusta este valor a la altura de tu header */
+    left: 0;
+    z-index: 2;
+    margin-top:80px;
     flex-wrap: nowrap;
-    position: absolute; /* Cambiado */
-    top: 0; /* Al inicio */
-    left: 50%; /* Centrado horizontalmente */
-    transform: translateX(-50%); /* Centrado horizontalmente */
 }
 .arrow-left{
-  justify-content: flex-start;
-  position-anchor: relative;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
 }
 .arrow-right{
-  justify-content: flex-end;
-  
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
 }
