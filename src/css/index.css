@@ -1,0 +1,30 @@
+.body-container {
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    align-items: flex-start;
+    position: relative; /* Añadido */
+}
+
+.contenedor-carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    z-index: 1;
+    margin-top: 0; /* Opcional: elimina el margen superior */
+    flex-wrap: nowrap;
+    position: absolute; /* Cambiado */
+    top: 0; /* Al inicio */
+    left: 50%; /* Centrado horizontalmente */
+    transform: translateX(-50%); /* Centrado horizontalmente */
+}
+.arrow-left{
+  justify-content: flex-start;
+  position-anchor: relative;
+}
+.arrow-right{
+  justify-content: flex-end;
+  
+}

@@ -8,25 +8,4 @@
   z-index:0;
   align-items: center;
 }
-.contenedor-carousel {
-  display: flex;
-  position:relative;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  flex-direction: row;
-  justify-content:space-between;
-  align-items:center;
-  width: 100%;
-  z-index:1;
-  margin-top: 20px;
-  flex-wrap:nowrap;
-}
-.arrow-left{
-  justify-content: flex-start;
-  position-anchor: relative;
-}
-.arrow-right{
-  justify-content: flex-end;
-  
-}
+
