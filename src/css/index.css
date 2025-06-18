@@ -1,0 +1,39 @@
+.body-background {
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F3E7;
+    color: #1A1A1A;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    align-items: center;
+    position: relative; /* Añadido */
+}
+
+.contenedor-carousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute; /* Cambiado a absolute */
+    top: 80px; /* Ajusta este valor a la altura de tu header */
+    left: 0;
+    z-index: 2;
+    margin-top:80px;
+    flex-wrap: nowrap;
+}
+.arrow-left{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+.arrow-right{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+}

@@ -1,8 +1,8 @@
 
 .header{
-    background-color: lightslategray;
+    background-color: transparent;
     max-width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -15,10 +15,13 @@
     list-style: none;
     margin: 5px;
     padding: 10px;
+    color:gold;
 }
-:link{
+
+a{
     text-decoration: none;
-    color: black;
+    color: gold;
+    font-size: large;
     font-weight: 600;
     margin: 10px;
 }

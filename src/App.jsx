@@ -6,9 +6,8 @@ import MenuTienda from "./pages/menu-tienda";
 import TrabajaEnTDC from "./pages/trabaja-en-tdc";
 import Franquicias from "./pages/franquicias";
 import Contacto from "./pages/contacto";
-import Footer from "./components/footer";
-import Header from "./components/header";
-import Body from "./components/body";
+
+
 
 
 import "./css/App.css";
@@ -19,15 +18,6 @@ function App() {
     
       <main >
         <div className="main-container">
-          <div className="header-container">
-            <Header></Header>
-          </div>
-          <div className="body-container">
-            <Body></Body>
-          </div>
-          <div className="footer-container">
-            <Footer></Footer>
-          </div>
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/tienda" element={<Tienda />} />
