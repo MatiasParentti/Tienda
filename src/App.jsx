@@ -7,6 +7,7 @@ import TrabajaEnTDC from "./pages/trabaja-en-tdc";
 import Franquicias from "./pages/franquicias";
 import Contacto from "./pages/contacto";
 import Footer from "./components/footer";
+import Header from "./components/header";
 import "./css/App.css";
 
 function App() {
@@ -23,7 +24,8 @@ function App() {
           <Route path="/contacto" element={<Contacto />} />
         </Routes>
       </main>
-      <Footer></Footer>
+      <Footer/>
+      <Header/>
     </>
   );
 }
