@@ -1,0 +1,33 @@
+/* Estilo de productos tipo catálogo */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  padding: 50px 0;
+}
+  .beer-product-card {
+    text-align: center;
+    background-color: rgb(242, 238, 238);
+    padding: 1rem;
+  }
+  
+  
+  .beer-product-card img {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    margin-bottom: 1rem;
+    transition: transform 0.3s;
+  }
+  .beer-product-card img:hover {
+    transform: scale(1.02);
+  }
+  
+  .beer-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  
