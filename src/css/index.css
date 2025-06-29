@@ -37,3 +37,15 @@
     transform: translateY(-50%);
     z-index: 3;
 }
+
+.main-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+}
+.main-container > .header-container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom:10px;
+}

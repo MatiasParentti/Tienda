@@ -2,7 +2,9 @@ import "../css/Contacto.css";
 
 export default function Contacto() {
   return (
-    <section className="contacto">
+ <div style={{ minHeight: "90vh", padding: "4vh 5vw" }}>
+
+      <section className="contacto">
       <div className="formulario">
         <div className="line-container">
           <h2>COMUNICATE CON NOSOTROS</h2>
@@ -48,5 +50,7 @@ export default function Contacto() {
         </div>
       </div>
     </section>
+ </div>
+
   );
 }

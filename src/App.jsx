@@ -6,30 +6,26 @@ import MenuTienda from "./pages/menu-tienda";
 import TrabajaEnTDC from "./pages/trabaja-en-tdc";
 import Franquicias from "./pages/franquicias";
 import Contacto from "./pages/contacto";
-
-
-
-
+import Footer from "./components/footer";
+import Header from "./components/header";
 import "./css/App.css";
 
 function App() {
   return (
     <>
-    
-      <main >
-        <div className="main-container">
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/tienda" element={<Tienda />} />
-              <Route path="/tutoriales" element={<Tutoriales />} />
-              <Route path="/menu-tienda" element={<MenuTienda />} />
-              <Route path="/trabaja-en-tdc" element={<TrabajaEnTDC />} />
-              <Route path="/franquicias" element={<Franquicias />} />
-              <Route path="/contacto" element={<Contacto />} />
-            </Routes>
-        </div>
+      <main>
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/tienda" element={<Tienda />} />
+          <Route path="/tutoriales" element={<Tutoriales />} />
+          <Route path="/menu-tienda" element={<MenuTienda />} />
+          <Route path="/trabaja-en-tdc" element={<TrabajaEnTDC />} />
+          <Route path="/franquicias" element={<Franquicias />} />
+          <Route path="/contacto" element={<Contacto />} />
+        </Routes>
       </main>
-      
+      <Footer/>
+      <Header/>
     </>
   );
 }
