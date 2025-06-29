@@ -1,9 +1,12 @@
+import HeroSection from '../components/HeroSection';
+import ProductGrid from '../components/ProductGrid';
+
 function MenuTienda() {
   return (
-    <div>
-      <h1>Menu Tienda</h1>
-      
-    </div>
+    <>
+    <HeroSection />
+    <ProductGrid />
+    </>
   );
 }
 

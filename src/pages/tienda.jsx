@@ -1,9 +1,10 @@
+import BeerProductCard from "../components/BeerProductCard";
+import BeerProductGrid from "../components/BeerProductGrid";
 function Tienda() {
   return (
-    <div>
-      <h1>Tienda</h1>
-      
-    </div>
+    <section>
+      <BeerProductGrid/>
+    </section>
   );
 }
 

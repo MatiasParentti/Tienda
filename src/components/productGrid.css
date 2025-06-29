@@ -1,0 +1,57 @@
+/* Layout de dos columnas */
+.product-columns {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  /* Tamaños variables */
+  .product-card.small {
+    max-width: 100%;
+  }
+  
+  .product-card.medium {
+    max-width: 100%;
+  }
+  
+  .product-card.large {
+    max-width: 100%;
+  }
+  .product-card {
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+  
+
+  .product-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  .product-card img:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-card .title {
+    background-color: #000;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+  }
+  
