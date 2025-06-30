@@ -1,3 +1,4 @@
+
 import BeerProductCard from "./BeerProductCard";
 import "./beerProduct.css";
 import ipa from "../assets/ipaT.png";
@@ -30,6 +31,7 @@ const BeerProductGrid = () => {
           image={item.image}
         />
       ))}
+
     </div>
   );
 };
