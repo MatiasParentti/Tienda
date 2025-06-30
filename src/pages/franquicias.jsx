@@ -1,9 +1,11 @@
+import Franquiform from "../components/franquiform";
+
 function Franquicias() {
   return (
-    <div>
-      <h1>Franquicias</h1>
+    <section>
+      <Franquiform/>
       
-    </div>
+    </section>
   );
 }
 

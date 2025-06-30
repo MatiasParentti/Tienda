@@ -25,6 +25,9 @@ export default function Header() {
             <li>
               <Link to="/menu-tienda">Nuestro menú</Link>
             </li>
+            <li>
+              <Link to="/franquicias">Franquicias</Link>
+            </li>
           </ul>
         </nav>
       </div>
