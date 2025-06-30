@@ -6,7 +6,7 @@ import porter from "../assets/Porter_T.png";
 import scotch from "../assets/ScotchT.png";
 import barley from "../assets/BarleyT.png";
 import imperial from "../assets/ImperialT.png";
-import centinela from "../assets/CentinelaT.png";
+import centinela from "../assets/centinelaT.png";
 import kolsch from "../assets/KolschT.png";
 
 const products = [
