@@ -1,27 +1,133 @@
-
-.header{
-    background-color: transparent;
+.header {
+    background-color: #1A1A1A;
     max-width: 100%;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
+    padding: 10px 20px;
 }
 
-.nav-list{
+.header-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-logo h2 {
+    display: flex;
+    flex-direction: column;
+    color: #C9A74A;
+    font-size: 1.5rem;
+    color: #C9A74A;
+    line-height: 1.2;
+    font-family: "Rye", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.nav-header {
+    display: flex;
+}
+
+.nav-list {
     display: flex;
     align-items: center;
     list-style: none;
     margin: 5px;
     padding: 10px;
-    color:gold;
 }
 
-a{
+.nav-list li {
+    margin: 0 10px;
+}
+
+a {
     text-decoration: none;
-    color: gold;
+    color: #C9A74A;
     font-size: large;
     font-weight: 600;
-    margin: 10px;
+}
+
+.menu {
+    display: none;
+    font-size: 2rem;
+    color: #C9A74A;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1080px) {
+    .nav-list li {
+        margin: 0 5px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .nav-header {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    .nav-list li {
+        margin: 5px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-image {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .nav-header {
+        display: none;
+        width: 100%;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 0;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+
+    .menu {
+        display: block;
+    }
+
+     .nav-header.active {
+        display: block;
+    }
+
+}
+
+
+@media (max-width: 375px) {
+    .header-logo h2 {
+        font-size: 1.2rem;
+    }
+
+    a {
+        font-size: 1rem;
+    }
 }

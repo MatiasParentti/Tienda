@@ -1,7 +1,9 @@
 import "./header.css";
 import { Link } from "react-router-dom";
-
+import { useState } from "react";
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className="header">
       <div className="header-image">
@@ -11,7 +13,12 @@ export default function Header() {
             <div>DE CERVEZAS</div>
           </h2>
         </div>
-        <nav className="nav-header">
+
+        <div onClick={() => setMenuOpen(!menuOpen)} className="menu">
+          &#9776;
+        </div>
+
+        <nav className={`nav-header ${menuOpen ? "active" : ""}`}>
           <ul className="nav-list">
             <li>
               <Link to="/">Inicio</Link>
