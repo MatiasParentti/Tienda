@@ -3,7 +3,7 @@ import Header from "../components/header";
 import { useState } from "react";
 
 function Index() {
-  const images = ["cervezas.jpeg", "Cerveza1.jpeg", "Cerveza2.jpeg"];
+  const images = ["cervezas2.png", "Cerveza1.png", "Cerveza3.png"];
   const [current, setCurrent] = useState(0);
 
   const nextImage = () => setCurrent((current + 1) % images.length);

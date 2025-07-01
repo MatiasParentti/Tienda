@@ -7,7 +7,7 @@
     height: 100%;
     z-index: 0;
     align-items: center;
-    position: relative; /* Añadido */
+    position: relative; 
 }
 
 .contenedor-carousel {
@@ -16,8 +16,8 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    position: absolute; /* Cambiado a absolute */
-    top: 80px; /* Ajusta este valor a la altura de tu header */
+    position: absolute; 
+    top: 80px; 
     left: 0;
     z-index: 2;
     margin-top:80px;
