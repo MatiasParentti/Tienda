@@ -21,19 +21,19 @@ export default function Header() {
         <nav className={`nav-header ${menuOpen ? "active" : ""}`}>
           <ul className="nav-list">
             <li>
-              <Link to="/">Inicio</Link>
+              <Link onClick={() => setMenuOpen(false)} to="/">Inicio</Link>
             </li>
             <li>
-              <Link to="/tienda">Nuestras Cervezas</Link>
+              <Link onClick={() => setMenuOpen(false)} to="/tienda">Nuestras Cervezas</Link>
             </li>
             <li>
-              <Link to="/#">Locales</Link>
+              <Link onClick={() => setMenuOpen(false)} to="/#">Locales</Link>
             </li>
             <li>
-              <Link to="/menu-tienda">Nuestro menú</Link>
+              <Link onClick={() => setMenuOpen(false)} to="/menu-tienda">Nuestro menú</Link>
             </li>
             <li>
-              <Link to="/franquicias">Franquicias</Link>
+              <Link onClick={() => setMenuOpen(false)} to="/franquicias">Franquicias</Link>
             </li>
           </ul>
         </nav>
